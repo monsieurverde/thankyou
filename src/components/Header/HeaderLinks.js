@@ -36,35 +36,49 @@ export default function HeaderLinks(props) {
           }}
           //buttonIcon={Apps}
           dropdownList={[
-            <Link to="https://halfsirius.com" className={classes.dropdownLink}>
-              Half Sirius
-            </Link>,
-            <a
-              href="https://fauniversitygalleries.com"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              University Galleries VE
-            </a>,
-            <a
-              href="https://belleit.net"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Belle IT
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://drive.google.com/open?id=1zD6S9fS0yiKWjGCcMVy-UR1g_Uc_FAzd"
+            <a href='https://www.halfsirius.com'>
+            <Button
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+          >
+          {/*<CloudDownload className={classes.icons}/>*/}Half Sirius
+          </Button></a>
+        ,
+        <a href='https://www.fauniversitygalleries.com'><Button
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+          >
+          {/*<CloudDownload className={classes.icons}/>*/}University Galleries FAU
+          </Button></a>
+        ,
+        <a href='https://www.belleit.net'><Button
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          {/*<CloudDownload className={classes.icons}/>*/}Resume
-        </Button>
+        {/*<CloudDownload className={classes.icons}/>*/}Belle IT
+        </Button></a>
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="github-tooltip"
+          title=""
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://github.com/monsieurverde"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-github"} />
+          </Button>
+        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
