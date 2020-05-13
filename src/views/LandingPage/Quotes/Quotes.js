@@ -27,7 +27,7 @@ class Quotes extends Component {
       })
       .then(response => response.json())
       .then((responseData) => {
-        let randomNumber = Math.floor((Math.random() * responseData.quotes.length) + 1);
+        let randomNumber = Math.floor((Math.random() * responseData.quotes.length));
         
         this.setState({
           apiResult: responseData.quotes,
